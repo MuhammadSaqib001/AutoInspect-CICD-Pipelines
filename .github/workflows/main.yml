@@ -22,6 +22,7 @@ jobs:
       uses: peter-evans/create-pull-request@v3
       with:
         title: 'Code quality check passed'
+        token: ${{ secrets.PAT }}
         commit-message: 'Merge feature branches into main'
         branch: 'main'
         body: |
