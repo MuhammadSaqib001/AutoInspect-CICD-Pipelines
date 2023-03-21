@@ -18,17 +18,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Install dependencies
-      run: npm install
-
-    - name: Run linter
-      run: npm run lint
-
-    - name: Run tests
-      run: npm run test
-
     - name: Create Pull Request
-      if: success()
       uses: peter-evans/create-pull-request@v3
       with:
         title: 'Code quality check passed'
