@@ -4,5 +4,4 @@ roboflow
 requests
 pandas
 opencv-python
-numpy 
-pickle
+numpy
