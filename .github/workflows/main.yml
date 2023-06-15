@@ -6,8 +6,6 @@ on:
     types: [closed]
   push:
     branches: [main, saqib,taimoor]
-
-
 jobs:
   build:
     if: github.event.pull_request.merged == true || github.event.push==true
@@ -15,11 +13,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
   
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.9.17
-      uses: actions/setup-python@v1
+    - name: Set up Python
+      uses: actions/setup-python@v2
       with:
-        python-version: 3.9.17
+        python-version: 3.9  # Specify the Python version you want to use
 
     - name: Install dependencies
       run: |
