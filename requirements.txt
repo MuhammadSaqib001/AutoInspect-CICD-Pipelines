@@ -5,5 +5,4 @@ requests
 pandas
 opencv-python
 numpy 
-keras 
 pickle
