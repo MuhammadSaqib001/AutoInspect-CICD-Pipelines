@@ -6,5 +6,4 @@ pandas
 opencv-python
 numpy 
 keras 
-tesnorflow
 pickle
