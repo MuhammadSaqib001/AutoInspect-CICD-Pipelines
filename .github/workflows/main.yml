@@ -1,31 +1,28 @@
 name: Code Quality Check and Merge
 
 on:
-  push:
-    branches:
-      - taimoor
-      - saqib
   pull_request:
-    branches:
-      - taimoor
-      - saqib
+    branches: [main, saqib,taimoor]
+    types: [closed]
+  push:
+    branches: [main, saqib,taimoor]
+
 
 jobs:
   build:
+    if: github.event.pull_request.merged == true || github.event.push==true
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v3
+    - uses: actions/checkout@v2
+  
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8.16
+      uses: actions/setup-python@v1
       with:
-        title: 'Code quality check passed'
-        token: ${{ secrets.PAT }}
-        commit-message: 'Merge feature branches into main'
-        branch: 'main'
-        body: |
-          Code quality check passed for feature branches:
-          - taimoor
-          - saqib
+        python-version: 3.8.16
+
+    - name: Install dependencies
+      run: |
+        make install
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v4

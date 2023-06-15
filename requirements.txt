@@ -2,3 +2,10 @@ flask
 flask-cors
 roboflow
 requests
+pandas
+opencv-python
+numpy 
+json
+keras 
+tesnorflow
+pickle
