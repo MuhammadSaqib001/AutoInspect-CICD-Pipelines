@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <link rel="stylesheet" href='/staticFiles/main.css' />
-  </head>
-  <body>
-    <h1><center>AutoInspect API as service</center></h1>
-    <p>Select image of a surgical instrument to draw inferenceK</p>
+  <title>Image Upload and Processing</title>
+</head>
+<body>
+  <h1>Image Upload and Processing</h1>
 
-    <form method="POST" enctype="multipart/form-data" action="/inference">
-        <input type="file" id="myFile" name="uploaded-file" accept=".jpg">
-        <input type="submit" value="Submit">
-    </form>
+  <form id="upload-form" method="POST" action="/" enctype="multipart/form-data">
+    <input type="file" id="myFile" name="uploaded-file" accept=".jpg">
+    <button type="submit">Upload</button>
+  </form>
 
-  </body>
+</body>
 </html>
