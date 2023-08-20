@@ -1,4 +1,4 @@
-# AutoInspect
+# AutoInspect CI/CD Pipeline
 ## 1. Introduction
 
 AutoInspect is a an automated inspection technique to make sure that surgical equipment are free of any visually examinable manufacturing fault . Our product is capable of classifying / grading a surgical instrument as faulty or non-faulty along with dataset generation for the model training & validation . It would also indicate the type of fault the subject has i.e., breakage ,cracks , pores , corrosion, tucks and scratches . Web-Interface through which the factory's higher authorities will be able to monitor the quality remotely and see quality stats on a daily basis plus the test rig as a prototype for automated image acquisition .
