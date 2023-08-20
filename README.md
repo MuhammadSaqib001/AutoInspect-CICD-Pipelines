@@ -48,5 +48,5 @@ To solve the problem of automated inspection of surgical equipment we have opted
 3. Now Clone the repository to run or collab/ run locally on Jupyter Notebook .
 4. Alternatobley , running files on online IDEs like Google Colab and Kaggle would be fine too .
 
-![CI/CD Arhitecture](https://github.com/MuhammadSaqib001/AutoInspect-CICD-Pipelines/cicd.jpg)
+![CI/CD Arhitecture](https://github.com/MuhammadSaqib001/AutoInspect-CICD-Pipelines/blob/main/cicd.jpg)
 
