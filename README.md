@@ -1,4 +1,4 @@
-# AutoInspect * MLOps Pipelines
+# AutoInspect ML Pipelines MLOps BS Project
 
 ## 1. Brief Overview :-
 The objective of this project is to develop a defect detection system for surgical instruments using machine learning (ML) techniques. The project leverages a comprehensive ML workflow and MLOps pipeline to ensure efficient development, testing, deployment, and monitoring of the ML model. The project utilizes various tools and technologies such as GitHub, GitHub Actions, Jenkins, Docker, PythonAnywhere, Apache Airflow, and React Dashboard for seamless collaboration, testing, deployment, and monitoring.
